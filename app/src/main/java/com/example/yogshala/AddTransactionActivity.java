@@ -62,6 +62,8 @@ public class AddTransactionActivity extends AppCompatActivity {
                 intent.putExtra("clientId", selectedClient.getId());  // Assuming `getId()` method exists in `Client` class
                 intent.putExtra("clientName", selectedClient.getFirstName() + " " + selectedClient.getLastName());
                 intent.putExtra("clientAmount", selectedClient.getAmount());
+                intent.putExtra("clientProgram", selectedClient.getProgram());
+
                 startActivity(intent);
             }
         });

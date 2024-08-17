@@ -9,21 +9,27 @@ public class Transaction {
 
     private String toDate;
     private String type;
-    private String amount;
+    private String monthFee;
+    private String program;
+
+    private String receivedAmount;
     private String remarks;
 
     public Transaction() {
     }
 
     // Constructor
-    public Transaction(String transactionId, String clientId,String clientName, String fromDate,String toDate, String type, String amount, String remarks) {
+    public Transaction(String transactionId, String clientId,String clientName, String fromDate,String toDate, String type, String monthFee,String receivedAmount,String program, String remarks) {
         this.transactionId = transactionId;
         this.clientId = clientId;
         this.clientName = clientName;
         this.fromDate = fromDate;
         this.toDate = toDate;
         this.type = type;
-        this.amount = amount;
+        this.monthFee = monthFee;
+
+        this.receivedAmount = receivedAmount;
+        this.program = program;
         this.remarks = remarks;
     }
 
@@ -76,12 +82,28 @@ public class Transaction {
         this.type = type;
     }
 
-    public String getAmount() {
-        return amount;
+    public String getMonthFee() {
+        return monthFee;
     }
 
-    public void setAmount(String amount) {
-        this.amount = amount;
+    public void setMonthFee(String monthFee) {
+        this.monthFee = monthFee;
+    }
+
+    public String getReceivedAmount() {
+        return receivedAmount;
+    }
+
+    public void setReceivedAmount(String receivedAmount) {
+        this.receivedAmount = receivedAmount;
+    }
+
+    public String getProgram() {
+        return program;
+    }
+
+    public void setProgram(String program) {
+        this.program = program;
     }
 
     public String getRemarks() {

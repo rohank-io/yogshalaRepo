@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 import com.example.yogshala.R;
@@ -22,8 +23,10 @@ import java.util.Calendar;
 
 public class SaveTransactionActivity extends AppCompatActivity {
 
-    private AutoCompleteTextView autoCompleteType;
-    private TextInputEditText etName, etFromDate, etToDate, etAmount, etRemarks;
+    private RadioButton rbCash,rbOnline;
+
+    private AutoCompleteTextView autoCompleteType,autoCompleteProgram;
+    private TextInputEditText etName, etFromDate, etToDate, etMonthFee, etRemarks,etReceivedAmount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,6 +44,7 @@ public class SaveTransactionActivity extends AppCompatActivity {
 
         // Initializing Views
         autoCompleteType = findViewById(R.id.autoCompleteType);
+        autoCompleteProgram = findViewById(R.id.autoCompleteProgram);
         etName = findViewById(R.id.etName);
         etFromDate = findViewById(R.id.etFromDate);
 
@@ -53,18 +57,24 @@ public class SaveTransactionActivity extends AppCompatActivity {
         etFromDate.setText(formattedDate);
 
         etToDate = findViewById(R.id.etToDate);
-        etAmount = findViewById(R.id.etAmount);
+        etMonthFee = findViewById(R.id.etMonthFee);
+
+        etReceivedAmount = findViewById(R.id.etReceivedAmount);
+
         etRemarks = findViewById(R.id.etRemarks);
 
         // Retrieving client data passed from the previous activity
         String clientId = getIntent().getStringExtra("clientId");
         String clientName = getIntent().getStringExtra("clientName");
         String clientAmount = getIntent().getStringExtra("clientAmount");
+        String clientProgram= getIntent().getStringExtra("clientProgram");
 
 
         // Set client name to the EditText
         etName.setText(clientName);
-        etAmount.setText(clientAmount);
+        etMonthFee.setText(clientAmount);
+        autoCompleteProgram.setText(clientProgram);
+
 
 
         etFromDate.setOnClickListener(v -> showFromDatePickerDialog());
@@ -89,13 +99,16 @@ public class SaveTransactionActivity extends AppCompatActivity {
         String fromDate = etFromDate.getText().toString();
         String toDate = etToDate.getText().toString();
         String type = autoCompleteType.getText().toString();
-        String amount = etAmount.getText().toString();
+        String monthFee = etMonthFee.getText().toString();
+        String receivedAmount = etReceivedAmount.getText().toString();
+        String program = autoCompleteProgram.getText().toString();
+
         String remarks = etRemarks.getText().toString();
 
         DatabaseReference transactionRef = FirebaseDatabase.getInstance().getReference("Transactions");
         String transactionId = transactionRef.push().getKey();
 
-        Transaction transaction = new Transaction(transactionId, clientId,clientName, fromDate,toDate, type, amount, remarks);
+        Transaction transaction = new Transaction(transactionId, clientId,clientName, fromDate,toDate, type, monthFee,receivedAmount,program, remarks);
         transactionRef.child(transactionId).setValue(transaction)
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
