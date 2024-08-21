@@ -72,7 +72,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:hint="First Name(*)"
+                        app:endIconMode="clear_text"
+                        android:hint="First Name*"
                         android:textSize="14sp">
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -100,7 +101,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:hint="Last Name(*)"
+                        app:endIconMode="clear_text"
+                        android:hint="Last Name*"
                         android:textSize="14sp">
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -135,7 +137,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
-                        android:hint="Date(*)"
+                        android:hint="Date*"
                         android:textSize="14sp">
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -168,7 +170,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="2dp"
 
-                        android:hint="Age(*)">
+                        android:hint="Age*">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/etAge"
@@ -200,7 +202,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-
+                    app:endIconMode="clear_text"
                     android:hint="Email">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -231,8 +233,9 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    app:endIconMode="clear_text"
                     android:layout_marginTop="2dp"
-                    android:hint="Address(*)">
+                    android:hint="Address">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etAddress"
@@ -247,72 +250,7 @@
 
             </LinearLayout>
             <!-- Parent fname Input -->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="horizontal">
 
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_weight="0.5"
-                    android:orientation="vertical">
-
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
-
-                        android:hint="Parent's Firstname">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etParentFirstName"
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:inputType="text"
-                            android:padding="8dp"
-                            android:textSize="14sp"/>
-
-                    </com.google.android.material.textfield.TextInputLayout>
-
-
-                </LinearLayout>
-                <!-- Parent Lname Input -->
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_weight="0.5"
-                    android:orientation="vertical">
-
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="2dp"
-
-                        android:hint="Parent's Lastname">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/etParentLastName"
-                            android:layout_width="match_parent"
-                            android:layout_height="50dp"
-                            android:inputType="text"
-                            android:padding="8dp"
-                            android:textSize="14sp"/>
-
-                    </com.google.android.material.textfield.TextInputLayout>
-                </LinearLayout>
-
-            </LinearLayout>
             <!-- Ph Number Input -->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -328,6 +266,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:hint="Phone Number(*)"
+                    app:endIconMode="clear_text"
                     app:counterEnabled="true"
                     app:counterMaxLength="10"
                     >
@@ -337,7 +276,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:inputType="phone"
-                        android:maxLength="10"
+                        android:maxLength="11"
                         android:padding="8dp"
                         android:textSize="14sp"/>
                 </com.google.android.material.textfield.TextInputLayout>
@@ -392,7 +331,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:hint="Program">
+                    android:hint="Program*">
 
                     <AutoCompleteTextView
                         android:id="@+id/autoCompleteProgram"
@@ -424,7 +363,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-
+                    app:endIconMode="clear_text"
                     android:hint="Enter Fees">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -440,7 +379,72 @@
 
 
             </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        app:endIconMode="clear_text"
+                        android:hint="Parent's Firstname">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etParentFirstName"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:inputType="text"
+                            android:padding="8dp"
+                            android:textSize="14sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+                <!-- Parent Lname Input -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        app:endIconMode="clear_text"
+                        android:hint="Parent's Lastname">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etParentLastName"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:inputType="text"
+                            android:padding="8dp"
+                            android:textSize="14sp"/>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+                </LinearLayout>
+
+            </LinearLayout>
             <!-- Area Input -->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -457,7 +461,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-
+                    app:endIconMode="clear_text"
                     android:hint="Area">
 
                     <com.google.android.material.textfield.TextInputEditText
@@ -487,6 +491,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
+                    app:endIconMode="clear_text"
                     android:hint="Interest">
 
                     <AutoCompleteTextView
@@ -518,6 +523,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
+                    app:endIconMode="clear_text"
                     android:hint="Referred By">
 
                     <AutoCompleteTextView
@@ -549,7 +555,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-
+                    app:endIconMode="clear_text"
                     android:hint="Referred Personal Name">
 
                     <com.google.android.material.textfield.TextInputEditText

@@ -11,11 +11,9 @@ import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
-import android.widget.DatePicker;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.yogshala.AddTransactionActivity;
 import com.example.yogshala.model.Client;
 import com.google.android.material.textfield.TextInputEditText;
 
@@ -209,7 +207,7 @@ public class AddClientActivity extends AppCompatActivity {
 
         if (firstName.isEmpty() || lastName.isEmpty() ||  age.isEmpty() ||
                 phone.isEmpty() ||    program.isEmpty()  ) {
-            Toast.makeText(this, "Please fill all the fields", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Please fill all the (*) fields ", Toast.LENGTH_SHORT).show();
             return;
         }
 

@@ -1,4 +1,4 @@
-package com.example.yogshala;
+package com.example.yogshala.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
@@ -17,9 +17,12 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
+import java.util.Date;
 
 public class SaveTransactionActivity extends AppCompatActivity {
 
@@ -63,6 +66,9 @@ public class SaveTransactionActivity extends AppCompatActivity {
 
         etRemarks = findViewById(R.id.etRemarks);
 
+        rbCash = findViewById(R.id.rbCash);
+        rbOnline = findViewById(R.id.rbOnline);
+
         // Retrieving client data passed from the previous activity
         String clientId = getIntent().getStringExtra("clientId");
         String clientName = getIntent().getStringExtra("clientName");
@@ -93,22 +99,34 @@ public class SaveTransactionActivity extends AppCompatActivity {
     }
 
     private void saveTransaction(String clientId) {
-
-
         String clientName = etName.getText().toString();
-        String fromDate = etFromDate.getText().toString();
-        String toDate = etToDate.getText().toString();
+
+        // Formatting the fromDate
+        SimpleDateFormat inputFormat = new SimpleDateFormat("dd/MM/yyyy");
+        SimpleDateFormat outputFormat = new SimpleDateFormat("yyyy-MM-dd");
+        String fromDateFormatted = "";
+        String toDateFormatted = "";
+        try {
+            Date fromDate = inputFormat.parse(etFromDate.getText().toString().trim());
+            Date toDate = inputFormat.parse(etToDate.getText().toString().trim());
+            fromDateFormatted = outputFormat.format(fromDate);
+            toDateFormatted = outputFormat.format(toDate);
+        } catch (ParseException e) {
+            e.printStackTrace();
+            Toast.makeText(this, "Invalid date format", Toast.LENGTH_SHORT).show();
+            return;
+        }
+
         String type = autoCompleteType.getText().toString();
         String monthFee = etMonthFee.getText().toString();
         String receivedAmount = etReceivedAmount.getText().toString();
         String program = autoCompleteProgram.getText().toString();
-
         String remarks = etRemarks.getText().toString();
-
+        String paymentMode = rbCash.isChecked() ? "Cash" : "Online";
         DatabaseReference transactionRef = FirebaseDatabase.getInstance().getReference("Transactions");
         String transactionId = transactionRef.push().getKey();
 
-        Transaction transaction = new Transaction(transactionId, clientId,clientName, fromDate,toDate, type, monthFee,receivedAmount,program, remarks);
+        Transaction transaction = new Transaction(transactionId, clientId, clientName, fromDateFormatted, toDateFormatted, type, monthFee, receivedAmount, program, remarks,paymentMode);
         transactionRef.child(transactionId).setValue(transaction)
                 .addOnCompleteListener(task -> {
                     if (task.isSuccessful()) {
@@ -119,6 +137,7 @@ public class SaveTransactionActivity extends AppCompatActivity {
                     }
                 });
     }
+
 
     private void showFromDatePickerDialog() {
         final Calendar calendar = Calendar.getInstance();

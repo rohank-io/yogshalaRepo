@@ -15,11 +15,13 @@ public class Transaction {
     private String receivedAmount;
     private String remarks;
 
+    private String paymentMode;
+
     public Transaction() {
     }
 
     // Constructor
-    public Transaction(String transactionId, String clientId,String clientName, String fromDate,String toDate, String type, String monthFee,String receivedAmount,String program, String remarks) {
+    public Transaction(String transactionId, String clientId, String clientName, String fromDate, String toDate, String type, String monthFee, String receivedAmount, String program, String remarks, String paymentMode) {
         this.transactionId = transactionId;
         this.clientId = clientId;
         this.clientName = clientName;
@@ -31,6 +33,7 @@ public class Transaction {
         this.receivedAmount = receivedAmount;
         this.program = program;
         this.remarks = remarks;
+        this.paymentMode = paymentMode;
     }
 
     // Getters and setters
@@ -113,4 +116,14 @@ public class Transaction {
     public void setRemarks(String remarks) {
         this.remarks = remarks;
     }
+
+    public String getPaymentMode() {
+        return paymentMode;
+    }
+
+    public void setPaymentMode(String paymentMode) {
+        this.paymentMode = paymentMode;
+    }
+
+
 }

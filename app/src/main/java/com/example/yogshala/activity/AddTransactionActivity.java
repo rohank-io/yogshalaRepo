@@ -1,4 +1,4 @@
-package com.example.yogshala;
+package com.example.yogshala.activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.AdapterView;
+import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.example.yogshala.Adapter.ClientNamesAdapter;
@@ -25,6 +26,8 @@ import java.util.Collections;
 import java.util.List;
 
 public class AddTransactionActivity extends AppCompatActivity {
+
+    private ImageView backBtn;
 
     private ListView listView;
     private ClientNamesAdapter clientNamesAdapter;
@@ -64,6 +67,15 @@ public class AddTransactionActivity extends AppCompatActivity {
                 intent.putExtra("clientAmount", selectedClient.getAmount());
                 intent.putExtra("clientProgram", selectedClient.getProgram());
 
+                startActivity(intent);
+            }
+        });
+
+        backBtn = findViewById(R.id.backBtn);
+        backBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AddTransactionActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });

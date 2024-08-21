@@ -127,46 +127,46 @@
                             android:background="@drawable/borders"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="120"
+                            android:text="0"
                             android:textColor="@color/dark_purple"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/todayTV"
+                            android:id="@+id/newTV"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:background="@drawable/borders"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="10"
+                            android:text="0"
                             android:textColor="@color/dark_purple"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/weekTV"
+                            android:id="@+id/joinedTV"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:background="@drawable/borders"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="24"
+                            android:text="0"
                             android:textColor="@color/dark_purple"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:id="@+id/monthTV"
+                            android:id="@+id/leftTV"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
                             android:background="@drawable/borders"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="80"
+                            android:text="0"
                             android:textColor="@color/dark_purple"
                             android:textSize="12sp"
                             android:textStyle="bold" />
@@ -179,6 +179,7 @@
             </RelativeLayout>
 
             <RelativeLayout
+                android:id="@+id/feesDueRL"
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
                 android:layout_marginTop="20dp"
@@ -322,73 +323,79 @@
                     <!-- Third Row with TextViews for data -->
                     <TableRow>
                         <TextView
+                            android:id="@+id/activeMedicalTv"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
                             android:background="@drawable/borders"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="50"
+                            android:text="0"
                             android:textColor="@color/dark_purple"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
                         <TextView
+                            android:id="@+id/dueMedicalTv"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
                             android:background="@drawable/borders"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="20"
+                            android:text="0"
                             android:textColor="@color/dark_purple"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
                         <TextView
+                            android:id="@+id/activeNormalTv"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
                             android:background="@drawable/borders"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="30"
+                            android:text="0"
                             android:textColor="@color/dark_purple"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
                         <TextView
+                            android:id="@+id/dueNormalTv"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
                             android:background="@drawable/borders"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="10"
+                            android:text="0"
                             android:textColor="@color/dark_purple"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
                         <TextView
+                            android:id="@+id/activeOnlineTv"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
                             android:background="@drawable/borders"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="40"
+                            android:text="0"
                             android:textColor="@color/dark_purple"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
                         <TextView
+                            android:id="@+id/dueOnlineTv"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
                             android:layout_weight="0.5"
                             android:background="@drawable/borders"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="15"
+                            android:text="0"
                             android:textColor="@color/dark_purple"
                             android:textSize="12sp"
                             android:textStyle="bold" />

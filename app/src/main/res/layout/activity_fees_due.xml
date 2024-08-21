@@ -4,18 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.AddTransactionActivity">
-
-
-
+    tools:context=".activity.ActivityFeesDue">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
         >
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -42,7 +39,7 @@
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Client List"
+                android:text="Fees Due"
                 android:textColor="@color/white"
                 android:textSize="22sp"
 
@@ -61,7 +58,7 @@
             android:layout_height="55dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
-            android:background="@drawable/editext_bg"
+            android:background="@drawable/light_purple_background"
             android:drawableStart="@drawable/search"
             android:drawablePadding="16dp"
             android:ems="10"
@@ -87,10 +84,9 @@
             android:divider="@android:color/transparent"
             android:dividerHeight="10.0sp"
             android:scrollbars="vertical"
-            tools:listitem="@layout/list_item_client" />
+            tools:listitem="@layout/list_item_fees_due" />
 
     </LinearLayout>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
