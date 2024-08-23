@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/dark_purple"
+    android:background="@color/light_blue"
     tools:context=".activity.DetailedDataActivity">
 
 
@@ -22,7 +22,7 @@
                 android:layout_height="55dp"
 
 
-                android:background="@color/dark_purple"
+                android:background="@color/light_blue"
 
                 >
 

@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="10dp"
 
-    app:cardBackgroundColor="@color/light_purple"
+    app:cardBackgroundColor="@color/light_blue"
     android:layout_marginStart="16dp"
     android:layout_marginEnd="16dp"
     app:cardCornerRadius="10dp"
@@ -18,7 +18,7 @@
         android:id="@+id/linearLayout11"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/light_purple"
+        android:background="@color/light_blue"
         android:layout_marginTop="5dp"
         android:layout_marginBottom="5dp"
         android:orientation="vertical">
@@ -33,7 +33,7 @@
             app:layout_constraintTop_toTopOf="parent"
 
             android:text="Name"
-            android:textColor="@color/dark_purple"
+            android:textColor="@color/darker_blue"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -47,7 +47,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:tint="@color/dark_purple"
+            app:tint="@color/darker_blue"
             android:src="@drawable/arrow" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

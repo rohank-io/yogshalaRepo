@@ -15,7 +15,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:background="@color/dark_purple"
+        android:background="@color/light_blue"
 
         >
 
@@ -24,7 +24,7 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="4dp"
-            app:tint="@color/white"
+            app:tint="@color/darker_blue"
             app:srcCompat="@drawable/back"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Reports"
-            android:textColor="@color/white"
+            android:textColor="@color/darker_blue"
             android:textSize="22sp"
 
 

@@ -26,7 +26,7 @@
                 android:textAlignment="center"
 
                 android:text="Sahyadri Iyengar Yogshala"
-                android:textColor="@color/dark_purple"
+                android:textColor="@color/darker_blue"
                 android:textSize="26sp"
 
                 />
@@ -49,7 +49,7 @@
                     android:layout_marginEnd="16dp"
 
                     android:text="Enquiries Count"
-                    android:textColor="@color/dark_purple"
+                    android:textColor="@color/darker_blue"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -74,7 +74,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="Total"
-                            android:textColor="@color/dark_purple"
+                            android:textColor="@color/darker_blue"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -86,7 +86,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="New"
-                            android:textColor="@color/dark_purple"
+                            android:textColor="@color/darker_blue"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -98,7 +98,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="Joined"
-                            android:textColor="@color/dark_purple"
+                            android:textColor="@color/darker_blue"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -110,7 +110,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="Left"
-                            android:textColor="@color/dark_purple"
+                            android:textColor="@color/darker_blue"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -128,7 +128,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="0"
-                            android:textColor="@color/dark_purple"
+                            android:textColor="@color/darker_blue"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -141,7 +141,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="0"
-                            android:textColor="@color/dark_purple"
+                            android:textColor="@color/darker_blue"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -154,7 +154,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="0"
-                            android:textColor="@color/dark_purple"
+                            android:textColor="@color/darker_blue"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -167,7 +167,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="0"
-                            android:textColor="@color/dark_purple"
+                            android:textColor="@color/darker_blue"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -194,7 +194,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="16dp"
                     android:text="Fees Due"
-                    android:textColor="@color/dark_purple"
+                    android:textColor="@color/darker_blue"
                     android:textSize="15sp"
                     android:textStyle="bold" />
 
@@ -216,7 +216,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="Medical"
-                            android:textColor="@color/dark_purple"
+                            android:textColor="@color/darker_blue"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -228,7 +228,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="Normal"
-                            android:textColor="@color/dark_purple"
+                            android:textColor="@color/darker_blue"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -240,7 +240,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="Online"
-                            android:textColor="@color/dark_purple"
+                            android:textColor="@color/darker_blue"
                             android:textSize="12sp"
                             android:textStyle="bold" />
                     </TableRow>
@@ -255,7 +255,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="Active"
-                            android:textColor="@color/dark_purple"
+                            android:textColor="@color/darker_blue"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -267,7 +267,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="Due"
-                            android:textColor="@color/dark_purple"
+                            android:textColor="@color/darker_blue"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -279,7 +279,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="Active"
-                            android:textColor="@color/dark_purple"
+                            android:textColor="@color/darker_blue"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -291,7 +291,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="Due"
-                            android:textColor="@color/dark_purple"
+                            android:textColor="@color/darker_blue"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -303,7 +303,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="Active"
-                            android:textColor="@color/dark_purple"
+                            android:textColor="@color/darker_blue"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -315,7 +315,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="Due"
-                            android:textColor="@color/dark_purple"
+                            android:textColor="@color/darker_blue"
                             android:textSize="12sp"
                             android:textStyle="bold" />
                     </TableRow>
@@ -331,7 +331,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="0"
-                            android:textColor="@color/dark_purple"
+                            android:textColor="@color/darker_blue"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -344,7 +344,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="0"
-                            android:textColor="@color/dark_purple"
+                            android:textColor="@color/darker_blue"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -357,7 +357,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="0"
-                            android:textColor="@color/dark_purple"
+                            android:textColor="@color/darker_blue"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -370,7 +370,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="0"
-                            android:textColor="@color/dark_purple"
+                            android:textColor="@color/darker_blue"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -383,7 +383,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="0"
-                            android:textColor="@color/dark_purple"
+                            android:textColor="@color/darker_blue"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
@@ -396,7 +396,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="0"
-                            android:textColor="@color/dark_purple"
+                            android:textColor="@color/darker_blue"
                             android:textSize="12sp"
                             android:textStyle="bold" />
                     </TableRow>
@@ -433,7 +433,7 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.29000002"
                         app:srcCompat="@drawable/add_icon"
-                        app:tint="@color/dark_purple" />
+                        app:tint="@color/darker_blue" />
 
                     <TextView
                         android:id="@+id/tvAddEnquiry"
@@ -441,7 +441,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="7dp"
                         android:text="Add Client"
-                        android:textColor="@color/dark_purple"
+                        android:textColor="@color/darker_blue"
                         android:textSize="17sp"
 
                         app:layout_constraintEnd_toEndOf="@id/imageViewBtn1"
@@ -476,7 +476,7 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.29000002"
                         app:srcCompat="@drawable/programicon"
-                        app:tint="@color/dark_purple" />
+                        app:tint="@color/darker_blue" />
 
                     <TextView
                         android:id="@+id/tv2"
@@ -484,7 +484,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="7dp"
                         android:text="Programs"
-                        android:textColor="@color/dark_purple"
+                        android:textColor="@color/darker_blue"
                         android:textSize="17sp"
 
                         app:layout_constraintEnd_toEndOf="@id/imageViewBtn2"
@@ -518,7 +518,7 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.29000002"
                         app:srcCompat="@drawable/bottom_btn4"
-                        app:tint="@color/dark_purple" />
+                        app:tint="@color/darker_blue" />
 
                     <TextView
                         android:id="@+id/tvaddArea"
@@ -526,7 +526,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="7dp"
                         android:text="Admin"
-                        android:textColor="@color/dark_purple"
+                        android:textColor="@color/darker_blue"
                         android:textSize="17sp"
 
                         app:layout_constraintEnd_toEndOf="@id/imageViewBtn3"
@@ -571,7 +571,7 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.29000002"
                         app:srcCompat="@drawable/bottom_btn3"
-                        app:tint="@color/dark_purple" />
+                        app:tint="@color/darker_blue" />
 
                     <TextView
 
@@ -579,7 +579,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="7dp"
                         android:text="Client List"
-                        android:textColor="@color/dark_purple"
+                        android:textColor="@color/darker_blue"
                         android:textSize="17sp"
 
                         app:layout_constraintEnd_toEndOf="@id/imageViewBtn4"
@@ -614,7 +614,7 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.29000002"
                         app:srcCompat="@drawable/bottom_btn2"
-                        app:tint="@color/dark_purple" />
+                        app:tint="@color/darker_blue" />
 
                     <TextView
 
@@ -622,7 +622,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="7dp"
                         android:text="Transactions"
-                        android:textColor="@color/dark_purple"
+                        android:textColor="@color/darker_blue"
                         android:textSize="17sp"
 
                         app:layout_constraintEnd_toEndOf="@id/imageViewBtn5"
@@ -656,7 +656,7 @@
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.29000002"
                         app:srcCompat="@drawable/reportsbtn"
-                        app:tint="@color/dark_purple" />
+                        app:tint="@color/darker_blue" />
 
                     <TextView
 
@@ -664,7 +664,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="7dp"
                         android:text="Reports"
-                        android:textColor="@color/dark_purple"
+                        android:textColor="@color/darker_blue"
                         android:textSize="17sp"
 
                         app:layout_constraintEnd_toEndOf="@id/imageViewBtn6"

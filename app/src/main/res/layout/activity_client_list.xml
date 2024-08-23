@@ -18,7 +18,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="@color/dark_purple"
+            android:background="@color/light_blue"
 
             >
 
@@ -27,7 +27,7 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="4dp"
-                app:tint="@color/white"
+                app:tint="@color/darker_blue"
                 app:srcCompat="@drawable/back"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -38,7 +38,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Client List"
-                android:textColor="@color/white"
+                android:textColor="@color/darker_blue"
                 android:textSize="22sp"
 
 
@@ -67,8 +67,8 @@
         android:layout_marginEnd="16dp"
         android:layout_marginStart="16dp"
         android:padding="16dp"
-        android:textColor="@color/dark_purple"
-        android:textColorHint="@color/dark_purple" />
+        android:textColor="@color/darker_blue"
+        android:textColorHint="@color/darker_blue" />
 
         <ListView
             android:id="@+id/listview"

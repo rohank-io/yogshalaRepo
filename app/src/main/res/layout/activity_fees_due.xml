@@ -20,7 +20,7 @@
             android:layout_height="55dp"
 
 
-            android:background="@color/dark_purple"
+            android:background="@color/light_blue"
 
             >
 
@@ -67,8 +67,8 @@
             android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
             android:padding="16dp"
-            android:textColor="@color/dark_purple"
-            android:textColorHint="@color/dark_purple" />
+            android:textColor="@color/darker_blue"
+            android:textColorHint="@color/darker_blue" />
 
 
 

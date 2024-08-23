@@ -22,7 +22,7 @@
                 android:layout_height="55dp"
 
 
-                android:background="@color/dark_purple"
+                android:background="@color/dark_blue"
 
                 >
 
@@ -35,7 +35,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/back"
-                    app:tint="@color/white" />
+                    app:tint="@color/darker_blue" />
 
                 <TextView
                     android:id="@+id/textView2"
@@ -43,7 +43,7 @@
                     android:layout_height="wrap_content"
                     android:text="Add Clients"
                     android:textAlignment="center"
-                    android:textColor="@color/white"
+                    android:textColor="@color/darker_blue"
 
 
                     android:textSize="22sp"
@@ -583,7 +583,7 @@
                 android:background="@drawable/buttonbackground"
                 android:gravity="center"
                 android:text="Save"
-                android:textColor="@color/white"
+                android:textColor="@color/darker_blue"
                 android:textSize="27sp"
                 android:textStyle="bold"
                 android:padding="8dp"

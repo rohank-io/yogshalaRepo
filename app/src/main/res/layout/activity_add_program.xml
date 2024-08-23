@@ -20,7 +20,7 @@
             android:layout_height="55dp"
 
 
-            android:background="@color/dark_purple"
+            android:background="@color/dark_blue"
 
             >
 
@@ -29,26 +29,25 @@
                 android:layout_width="40dp"
                 android:layout_height="40dp"
                 android:layout_marginStart="4dp"
-                app:tint="@color/white"
-                app:srcCompat="@drawable/back"
-                app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"/>
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back"
+                app:tint="@color/darker_blue" />
 
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Programs List"
-                android:textColor="@color/white"
-                android:textSize="22sp"
-
-
-
                 android:textAlignment="center"
+                android:textColor="@color/darker_blue"
+
+
+                android:textSize="22sp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -74,18 +73,18 @@
                 android:ems="10"
                 android:hint="Add Program"
                 android:inputType="text"
+                android:textColorHint="@color/darker_blue"
                  />
 
             <ImageView
                 android:id="@+id/addBtn"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                app:tint="@color/white"
-                android:background="@color/dark_purple"
+                app:tint="@color/darker_blue"
+                android:background="@color/dark_blue"
                 android:padding="8dp"
                 app:srcCompat="@drawable/float_icon" />
         </LinearLayout>
-
 
 
 

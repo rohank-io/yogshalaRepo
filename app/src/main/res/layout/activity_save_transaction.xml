@@ -21,7 +21,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                android:background="@color/dark_purple">
+                android:background="@color/light_blue">
 
                 <!-- Back button ImageView -->
                 <ImageView
