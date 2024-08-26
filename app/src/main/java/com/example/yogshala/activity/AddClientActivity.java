@@ -89,7 +89,7 @@ public class AddClientActivity extends AppCompatActivity {
         autoCompleteReferral = findViewById(R.id.autoCompleteReferral);
 
         btnSave = findViewById(R.id.btnSave);
-
+//Change
         backBtn = findViewById(R.id.backBtn);
         backBtn.setOnClickListener(new View.OnClickListener() {
             @Override

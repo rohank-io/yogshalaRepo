@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         CL2.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, AddProgramActivity.class)));
 
         CL3 = findViewById(R.id.CL3);
-        CL3.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, AdminActivity.class)));
+        CL3.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, AllTransactionActivity.class)));
 
         CL4 = findViewById(R.id.CL4);
         CL4.setOnClickListener(v -> startActivity(new Intent(MainActivity.this, ClientListActivity.class)));

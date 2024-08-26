@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/light_blue"
+    android:background="@color/dark_blue"
     tools:context=".activity.DetailedDataActivity">
 
 
@@ -22,7 +22,7 @@
                 android:layout_height="55dp"
 
 
-                android:background="@color/light_blue"
+                android:background="@color/dark_blue"
 
                 >
 
@@ -41,7 +41,7 @@
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Programs List"
+                    android:text="Detailed Info"
                     android:textColor="@color/white"
                     android:textSize="22sp"
 
@@ -79,7 +79,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="52dp"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
+                        android:textColor="@color/darker_blue"
                         android:textSize="20sp"
                         android:layout_marginStart="16dp"
                         android:layout_marginEnd="16dp"
@@ -104,7 +104,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="20dp"
                             android:layout_weight="1"
-                            app:tint="#6235b9"
+                            app:tint="@color/dark_blue"
                             app:srcCompat="@drawable/location" />
 
                         <TextView
@@ -142,7 +142,7 @@
                                 android:layout_height="40dp"
                                 android:layout_margin="8dp"
                                 android:padding="8dp"
-                                app:tint="#6235b9"
+                                app:tint="@color/dark_blue"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
@@ -164,7 +164,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="21/10/2024"
-                                android:textColor="#6235b9"
+                                android:textColor="@color/darker_blue"
 
                                 android:textStyle="bold"
                                 app:layout_constraintBottom_toBottomOf="@+id/ivEnquiryDate"
@@ -187,6 +187,7 @@
                                 android:layout_height="40dp"
                                 android:layout_margin="8dp"
                                 android:padding="8dp"
+                                app:tint="@color/dark_blue"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
@@ -208,7 +209,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Rs."
-                                android:textColor="#6235b9"
+                                android:textColor="@color/darker_blue"
 
                                 android:textStyle="bold"
                                 app:layout_constraintBottom_toBottomOf="@+id/ivAmount"
@@ -243,7 +244,7 @@
                                 android:id="@+id/ivAge"
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
-                                app:tint="#6235b9"
+                                app:tint="@color/dark_blue"
                                 android:layout_margin="8dp"
                                 android:padding="8dp"
                                 app:layout_constraintBottom_toBottomOf="parent"
@@ -267,7 +268,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="16"
-                                android:textColor="#6235b9"
+                                android:textColor="@color/darker_blue"
 
                                 android:textStyle="bold"
                                 app:layout_constraintBottom_toBottomOf="@+id/ivAge"
@@ -290,6 +291,7 @@
                                 android:layout_height="40dp"
                                 android:layout_margin="8dp"
                                 android:padding="8dp"
+                                app:tint="@color/dark_blue"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
@@ -311,7 +313,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Cold"
-                                android:textColor="#6235b9"
+                                android:textColor="@color/darker_blue"
 
                                 android:textStyle="bold"
                                 app:layout_constraintBottom_toBottomOf="@+id/ivStatus"
@@ -346,7 +348,7 @@
                                 android:id="@+id/ivInterest"
                                 android:layout_width="40dp"
                                 android:layout_height="40dp"
-                                app:tint="#6235b9"
+                                app:tint="@color/dark_blue"
                                 android:layout_margin="8dp"
                                 android:padding="8dp"
                                 app:layout_constraintBottom_toBottomOf="parent"
@@ -370,7 +372,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Joined"
-                                android:textColor="#6235b9"
+                                android:textColor="@color/darker_blue"
 
                                 android:textStyle="bold"
                                 app:layout_constraintBottom_toBottomOf="@+id/ivInterest"
@@ -393,7 +395,8 @@
                                 android:layout_height="40dp"
                                 android:layout_margin="8dp"
                                 android:padding="8dp"
-                                app:tint="#6235b9"
+                                app:tint="@color/dark_blue"
+
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
@@ -415,7 +418,8 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Instagram Post"
-                                android:textColor="#6235b9"
+                                android:textColor="@color/darker_blue"
+
 
                                 android:textStyle="bold"
                                 app:layout_constraintBottom_toBottomOf="@+id/ivRefferedBy"
@@ -480,7 +484,7 @@
                                 android:layout_height="40dp"
 
                                 android:padding="8dp"
-                                app:tint="#6235b9"
+                                app:tint="@color/dark_blue"
                                 app:srcCompat="@drawable/parentsicon" />
 
                             <TextView
@@ -499,7 +503,8 @@
                                 android:layout_below="@id/tvParent"
                                 android:layout_alignStart="@id/tvParent"
                                 android:text="Maruti Kudale"
-                                android:textColor="#6235b9"
+                                android:textColor="@color/darker_blue"
+
                                 android:textStyle="bold" />
                         </RelativeLayout>
 
@@ -515,7 +520,7 @@
                                 android:layout_height="40dp"
 
                                 android:padding="8dp"
-                                app:tint="#6235b9"
+                                app:tint="@color/dark_blue"
                                 app:srcCompat="@drawable/job_type" />
 
                             <TextView
@@ -534,7 +539,8 @@
                                 android:layout_below="@id/tvProgram"
                                 android:layout_alignStart="@id/tvProgram"
                                 android:text="Football"
-                                android:textColor="#6235b9"
+                                android:textColor="@color/darker_blue"
+
                                 android:textStyle="bold" />
                         </RelativeLayout>
 
@@ -550,7 +556,7 @@
                                 android:layout_height="40dp"
 
                                 android:padding="8dp"
-                                app:tint="#6235b9"
+                                app:tint="@color/dark_blue"
                                 app:srcCompat="@drawable/phoneicon" />
 
                             <TextView
@@ -569,7 +575,8 @@
                                 android:layout_below="@id/tvMobile"
                                 android:layout_alignStart="@id/tvMobile"
                                 android:text="8379902131"
-                                android:textColor="#6235b9"
+                                android:textColor="@color/darker_blue"
+
                                 android:textStyle="bold" />
                         </RelativeLayout>
 
@@ -585,7 +592,7 @@
                                 android:layout_height="40dp"
 
                                 android:padding="8dp"
-                                app:tint="#6235b9"
+                                app:tint="@color/dark_blue"
                                 app:srcCompat="@drawable/emailicon" />
 
                             <TextView
@@ -604,7 +611,8 @@
                                 android:layout_below="@id/tvEmail"
                                 android:layout_alignStart="@id/tvEmail"
                                 android:text="abc@gmail.com"
-                                android:textColor="#6235b9"
+                                android:textColor="@color/darker_blue"
+
                                 android:textStyle="bold" />
                         </RelativeLayout>
 
@@ -620,7 +628,7 @@
                                 android:layout_height="40dp"
 
                                 android:padding="8dp"
-                                app:tint="#6235b9"
+                                app:tint="@color/dark_blue"
                                 app:srcCompat="@drawable/addressicon" />
 
                             <TextView
@@ -639,7 +647,8 @@
                                 android:layout_below="@id/tvAddress"
                                 android:layout_alignStart="@id/tvAddress"
                                 android:text="Hadapsar, Pune 411028"
-                                android:textColor="#6235b9"
+                                android:textColor="@color/darker_blue"
+
                                 android:textStyle="bold" />
                         </RelativeLayout>
 
@@ -656,7 +665,7 @@
                                 android:layout_height="40dp"
 
                                 android:padding="8dp"
-                                app:tint="#6235b9"
+                                app:tint="@color/dark_blue"
                                 app:srcCompat="@drawable/refferalperson" />
 
                             <TextView
@@ -675,7 +684,8 @@
                                 android:layout_below="@id/tvRefferal"
                                 android:layout_alignStart="@id/tvRefferal"
                                 android:text="Aditya S"
-                                android:textColor="#6235b9"
+                                android:textColor="@color/darker_blue"
+
                                 android:textStyle="bold" />
                         </RelativeLayout>
                     </LinearLayout>
