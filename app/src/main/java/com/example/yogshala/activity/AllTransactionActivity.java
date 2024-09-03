@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -82,6 +83,26 @@ public class AllTransactionActivity extends AppCompatActivity {
 
         // Load all transactions initially
         loadAllTransactions();
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // Inside your Adapter's onClickListener
+                Transaction transaction = filteredTransactionsList.get(position);
+                Intent intent = new Intent(AllTransactionActivity.this,DetailedTransactionActivity.class);
+                intent.putExtra("clientName", transaction.getClientName());
+                intent.putExtra("fromDate", transaction.getFromDate());
+                intent.putExtra("toDate", transaction.getToDate());
+                intent.putExtra("mode", transaction.getPaymentMode());
+                intent.putExtra("type", transaction.getType());
+                intent.putExtra("monthFee", transaction.getMonthFee());
+                intent.putExtra("receivedAmount", transaction.getReceivedAmount());
+                intent.putExtra("remark", transaction.getRemarks());
+                intent.putExtra("program", transaction.getProgram());
+                startActivity(intent);
+
+            }
+        });
     }
 
     private void showDatePickerDialog(EditText editText) {

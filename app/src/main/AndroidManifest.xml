@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Yogshala"
         tools:targetApi="31">
         <activity
+            android:name=".activity.DetailedTransactionActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.AllTransactionActivity"
             android:exported="false" />
         <activity

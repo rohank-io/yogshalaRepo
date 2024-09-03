@@ -2,12 +2,18 @@ package com.example.yogshala.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
+import android.widget.PopupMenu;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.yogshala.R;
 
@@ -16,7 +22,7 @@ public class DetailedDataActivity extends AppCompatActivity {
     private TextView tvName, tvArea, tvEnquiryDate, tvProgramDetail, tvAge2, tvStatus2, tvInterest2, tvRefferedBy2 , tvAmountDetail;
     private TextView tvParent2, tvMobile2, tvEmail2, tvAddress2, tvRefferalName;
 
-    private ImageView backBtn;
+    private ImageView backBtn,menuBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +64,36 @@ public class DetailedDataActivity extends AppCompatActivity {
             }
         });
 
+        tvMobile2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Get the text from tvMobile2
+                String textToCopy = tvMobile2.getText().toString();
+
+                // Get the clipboard system service
+                ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+
+                // Create a clip with the text
+                ClipData clip = ClipData.newPlainText("Mobile Number", textToCopy);
+
+                // Set the clip to the clipboard
+                if (clipboard != null) {
+                    clipboard.setPrimaryClip(clip);
+
+                    // Show a toast message to confirm the copy action
+                    Toast.makeText(getApplicationContext(), "Mobile number copied to clipboard", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+
+        menuBtn = findViewById(R.id.menuBtn);
+        menuBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showPopupMenu(v);
+            }
+        });
+
         // Get data from intent
         Intent intent = getIntent();
         String name = intent.getStringExtra("name");
@@ -91,5 +127,41 @@ public class DetailedDataActivity extends AppCompatActivity {
         tvAmountDetail.setText(amount);
         tvEmail2.setText(email);
         tvAddress2.setText(address);
+    }
+
+    private void showPopupMenu(View view) {
+        // Create a PopupMenu
+        PopupMenu popupMenu = new PopupMenu(this, view);
+        // Inflate the menu resource
+        popupMenu.getMenuInflater().inflate(R.menu.menu_items, popupMenu.getMenu());
+
+        // Set up the menu item click listener
+        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
+//            private static final int b = R.id.menu_edit;
+//            private static final int a = R.id.menu_delete;
+
+            @Override
+            public boolean onMenuItemClick(MenuItem item) {
+                int id = item.getItemId();
+
+                if (id == R.id.menu_edit) {
+                    // Handle Edit action
+                    Toast.makeText(DetailedDataActivity.this, "Edit is clicked", Toast.LENGTH_SHORT).show();
+                    return true;
+                } else if (id == R.id.menu_delete) {
+                    // Handle Delete action
+                    Toast.makeText(DetailedDataActivity.this, "Delete is clicked", Toast.LENGTH_SHORT).show();
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+
+
+        });
+
+        // Show the PopupMenu
+        popupMenu.show();
     }
 }
