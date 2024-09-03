@@ -76,10 +76,10 @@ public class SaveTransactionActivity extends AppCompatActivity {
         String clientProgram= getIntent().getStringExtra("clientProgram");
 
 
-        // Set client name to the EditText
-        etName.setText(clientName);
-        etMonthFee.setText(clientAmount);
-        autoCompleteProgram.setText(clientProgram);
+        // Set client data to the views
+        etName.setText(clientName != null ? clientName : "");
+        etMonthFee.setText(clientAmount != null ? clientAmount : "");
+        autoCompleteProgram.setText(clientProgram != null ? clientProgram : "");
 
 
 

@@ -27,7 +27,7 @@ public class FeesDueAdapter extends ArrayAdapter<Transaction> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
-            convertView = LayoutInflater.from(context).inflate(R.layout.list_item_fees_due, parent, false);
+            convertView = LayoutInflater.from(context).inflate(R.layout.list_item_transaction, parent, false);
         }
 
         Transaction transaction = transactions.get(position);
@@ -36,10 +36,13 @@ public class FeesDueAdapter extends ArrayAdapter<Transaction> {
         TextView tvName = convertView.findViewById(R.id.tvName);
         TextView tvDueDate = convertView.findViewById(R.id.tvDueDate);
         TextView tvProgram = convertView.findViewById(R.id.tvProgram);
+        TextView tvAmount = convertView.findViewById(R.id.tvAmount);
+
 
 
         // Set data from transaction object
         tvName.setText(transaction.getClientName());
+        tvAmount.setText(transaction.getReceivedAmount());
         tvDueDate.setText(transaction.getToDate());
         tvProgram.setText(transaction.getProgram());
 

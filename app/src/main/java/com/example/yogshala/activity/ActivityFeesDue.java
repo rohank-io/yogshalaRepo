@@ -2,16 +2,19 @@ package com.example.yogshala.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.DatePickerDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 
 import com.example.yogshala.Adapter.FeesDueAdapter;
 import com.example.yogshala.R;
 import com.example.yogshala.model.Transaction;
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -21,6 +24,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
@@ -33,6 +37,7 @@ public class ActivityFeesDue extends AppCompatActivity {
     private ListView listView;
     private FeesDueAdapter adapter;
     private ArrayList<Transaction> transactionList;
+    private TextInputEditText etFromDate,etToDate;
 
 
     @Override
@@ -64,6 +69,27 @@ public class ActivityFeesDue extends AppCompatActivity {
         // Initialize the adapter with the list of transactions
         adapter = new FeesDueAdapter(this, transactionList);
         listView.setAdapter(adapter);
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // Get the selected transaction
+                Transaction selectedTransaction = transactionList.get(position);
+
+                // Create an intent to start SaveTransactionActivity
+                Intent intent = new Intent(ActivityFeesDue.this, SaveTransactionActivity.class);
+                // Pass the transaction details to the new activity
+                intent.putExtra("clientId", selectedTransaction.getClientId());
+                intent.putExtra("clientName", selectedTransaction.getClientName());
+                intent.putExtra("clientAmount", selectedTransaction.getMonthFee()); // Assuming MonthFee is passed
+                intent.putExtra("clientProgram", selectedTransaction.getProgram()); // Assuming Program is passed
+
+                startActivity(intent);
+            }
+        });
+
+
+
 
         // Get today's date
         String todayDate = getTodayDate();
@@ -146,6 +172,8 @@ public class ActivityFeesDue extends AppCompatActivity {
         }
         return false;
     }
+
+
 
 
 }

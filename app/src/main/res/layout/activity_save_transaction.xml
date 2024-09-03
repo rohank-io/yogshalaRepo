@@ -21,7 +21,7 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="55dp"
-                android:background="@color/light_blue">
+                android:background="@color/dark_blue">
 
                 <!-- Back button ImageView -->
                 <ImageView
@@ -70,7 +70,7 @@
                     <!-- TextInputEditText for client name input -->
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etName"
-                        android:inputType="textEmailAddress"
+                        android:inputType="textCapSentences"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:textSize="14sp"
@@ -304,7 +304,7 @@
                     <!-- TextInputEditText for remarks input -->
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/etRemarks"
-                        android:inputType="text"
+                        android:inputType="textCapSentences"
                         android:layout_width="match_parent"
                         android:layout_height="50dp"
                         android:padding="8dp"
@@ -349,7 +349,7 @@
                     android:gravity="center"
                     android:layout_margin="16dp"
                     android:textSize="22sp"
-                    android:text="Save"
+                    android:text="Save "
                     android:textColor="@color/white"
                     android:textStyle="bold" />
             </LinearLayout>
